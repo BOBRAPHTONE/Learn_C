@@ -131,18 +131,20 @@ void edit_details(){
     int skill_in_c;  //my own honest evaluation of skill
     int chapter ; //the chapter of the book i have done
     int lines_of_code ; //numer of lines of code i write per day //target is 300 new lines of code ;150 source and 150 header
-    char feedback[5] = "" ;
+    char *feedback[5] ;
+    char employee[10];
 
 int update_salary(int salary){
-    char employee[] = " ";
+    char employee[10];
+    char feedback[5];
     printf("Please enter employee name ");
-    scanf(" %s ",&employee);
+    gets(employee);   
     printf("Please give a honest evaluation of his or her skills in C  out of 100 percent ");
     scanf("%d",&skill_in_c);
     printf("How many lines of code does he or she push to git on a daily basis");
     scanf("%d",&lines_of_code);
     printf("Are you impressed with his or her indentation style  Yes or No");
-    scanf(" %s ", &feedback);
+    gets(feedback);
 
     int typing_speed =0 ;
         if((typing_speed >= 60 ) && (skill_in_c >= 75))
@@ -172,9 +174,43 @@ int update_salary(int salary){
 
 
 //Company mycompany;
+void register_company(Company company)
+
+{
+
+
+
+}
+void deregister_company(Company company)
+{
+
+
+
+
+
+}
+void update_employees(employees new_employee)
+
+{
 
 
 
 
 
 
+
+
+}
+
+
+
+
+
+
+/*--------------Key concepts learnt -------------
+*
+*gets(string)
+ puts(string)
+*
+*
+*-------------------------------------------------*/
