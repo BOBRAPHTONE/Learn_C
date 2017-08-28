@@ -12,6 +12,8 @@ challange1 : challange1.c
 	gcc challange1.c -o challange1
 challange2 : challange2.c
 	gcc challange2.c -o challange2
+exercise7 : exercise7.c
+	gcc exercise7.c -o exercise7
 exercise16-pointers :
 	gcc exercise16-pointers.c -o exercise16-pointers
 
