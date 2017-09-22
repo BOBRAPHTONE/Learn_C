@@ -1,12 +1,12 @@
 /*
 
- Programme to explain the concept of arrays and structures 
- and how they are related
- The concpet of array of strcture variables is introduced and used to edit empoyee data in a company
- Progarmme written by Bob Afwata
- Date 27 /8/2017
+    Programme to explain the concept of arrays and structures 
+    and how they are related
+    The concpet of array of strcture variables is introduced and used to edit empoyee data in a company
+    Progarmme written by Bob Afwata
+    Date 27 /8/2017
 
- This introduces structures in one way and uses the .operator ...the new keyword typedef is used also
+    This introduces structures in one way and uses the .operator ...the new keyword typedef is used also
 
 */
 

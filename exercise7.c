@@ -1,4 +1,4 @@
-/* Exercise 7 ======================================================
+s/* Exercise 7 ======================================================
  * This is a programme that evaluates emplyees in a company based on
  *    (i) The number of lines of code they publish on github daily
  *    (ii) Their skills in c
@@ -9,9 +9,8 @@
 */
 #include<stdio.h>
 #include<string.h> //string library for manipulating strings
-
-
-
+#include<ctype.h>
+#define MAXSTRING 100
 
 typedef struct { 
     
@@ -124,7 +123,6 @@ void edit_details(){
 }
 
 
-
     int typing_speed = 0 ; //my typing speed in words per minute
     double new_salary ; //God willing my new salary in kshs
     double old_salary; //my old slary also in kshs
@@ -138,13 +136,14 @@ int update_salary(int salary){
     char employee[10];
     char feedback[5];
     printf("Please enter employee name ");
-    gets(employee);   
+    process_string();  
     printf("Please give a honest evaluation of his or her skills in C  out of 100 percent ");
     scanf("%d",&skill_in_c);
     printf("How many lines of code does he or she push to git on a daily basis");
     scanf("%d",&lines_of_code);
     printf("Are you impressed with his or her indentation style  Yes or No");
-    gets(feedback);
+    process_string(); 
+    //gets(feedback);
 
     int typing_speed =0 ;
         if((typing_speed >= 60 ) && (skill_in_c >= 75))
@@ -202,7 +201,22 @@ void update_employees(employees new_employee)
 
 }
 
+void process_string(void)
 
+{
+    
+    char c, name[MAXSTRING];
+    int i = 0;
+    for (i = 0; (c = getchar()) != '\n'; ++i) 
+    {
+       name[i] = c;
+    
+    }
+       name[i] = '\0';
+
+       printf("%s",name);
+
+}
 
 
 

@@ -16,6 +16,8 @@ exercise7 : exercise7.c
 	gcc exercise7.c -o exercise7
 exercise16-pointers :
 	gcc exercise16-pointers.c -o exercise16-pointers
+strings : strings.c
+	gcc strings.c -o strings
 
 clean :
-	rm -rf *o challange1 challange2 exercise1 exercise2 exercise16-pointers
+	rm -rf *o challange1 challange2 exercise1 exercise2 exercise16-pointers strings
